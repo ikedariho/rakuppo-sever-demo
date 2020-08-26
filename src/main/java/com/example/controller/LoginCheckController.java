@@ -5,6 +5,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -29,6 +30,9 @@ public class LoginCheckController {
 	
 	@Autowired
 	private RegisterMailService mailService;
+	
+	@Autowired
+	private BCryptPasswordEncoder encoder;
 
 	/**
 	 * メールアドレスからログインユーザー情報を取得を取得するメソッド.
@@ -45,6 +49,7 @@ public class LoginCheckController {
 		Matcher matcher = pattern.matcher(param.get("mail"));
 		Matcher matcher2 = pattern2.matcher(param.get("mail"));
 		boolean confirmDuplication = mailService.confirmMail(param.get("mail"));
+		System.out.println(encoder.encode(param.get("password")));
 		if(confirmDuplication == true) {
 		if (matcher.matches() || matcher2.matches()) {
 			return userService.findByMailAndAuthoriry(param.get("mail"),Status.AVAILABLE.getStatusId());

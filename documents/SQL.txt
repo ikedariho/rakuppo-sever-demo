@@ -41,6 +41,7 @@ INSERT INTO users (user_name,user_name_kana,dep_id,hire_date,authority,register_
 INSERT INTO users (user_name,user_name_kana,dep_id,hire_date,authority,register_user_id,register_date,update_user_id,update_date,version,status)VALUES('ラクスカルちゃん','らくすかるちゃん',1,'2018-10-01 00:00:00',1,1,'2020-04-27 09:00:00',1,'2020-04-27 09:00:00',1,2);
 INSERT INTO users (user_name,user_name_kana,dep_id,hire_date,authority,register_user_id,register_date,update_user_id,update_date,version,status)VALUES('ラクスカル先輩','らくすかるせんぱい',1,'2018-07-01 00:00:00',1,1,'2020-04-27 09:00:00',1,'2020-04-27 09:00:00',1,2);
 INSERT INTO users (user_name,user_name_kana,dep_id,hire_date,authority,register_user_id,register_date,update_user_id,update_date,version,status)VALUES('いいだ先輩','いいだせんぱい',2,'2019-07-01 00:00:00',1,1,'2020-04-27 09:00:00',1,'2020-04-27 09:00:00',1,2);
+INSERT INTO users (user_name,user_name_kana,dep_id,hire_date,authority,register_user_id,register_date,update_user_id,update_date,version,status)VALUES('ゲスト（お客様用）','ゲスト',2,'2019-07-01 00:00:00',1,1,'2020-04-27 09:00:00',1,'2020-04-27 09:00:00',1,2);
 
 INSERT INTO deps(dep_name,register_user_id,register_date,update_user_id,update_date,version,status) VALUES('アプリエンジニア',1,'2020-04-27 09:00:00',1,'2020-04-27 09:00:00',1,2);
 INSERT INTO deps(dep_name,register_user_id,register_date,update_user_id,update_date,version,status) VALUES('クラウドエンジニア',1,'2020-04-27 09:00:00',1,'2020-04-27 09:00:00',1,2);
@@ -51,6 +52,7 @@ INSERT INTO mails(mail_name,user_id,register_user_id,register_date,update_user_i
 INSERT INTO mails(mail_name,user_id,register_user_id,register_date,update_user_id,update_date,version,status) VALUES('rakuskarukaruchan@rakus.co.jp',2,1,'2020-04-27 09:00:00',1,'2020-04-27 09:00:00',1,2);
 INSERT INTO mails(mail_name,user_id,register_user_id,register_date,update_user_id,update_date,version,status) VALUES('rakuskarukarusenpai@rakus.co.jp',3,1,'2020-04-27 09:00:00',1,'2020-04-27 09:00:00',1,2);
 INSERT INTO mails(mail_name,user_id,register_user_id,register_date,update_user_id,update_date,version,status) VALUES('shuhei.iida@gmail.com',4,1,'2020-04-27 09:00:00',1,'2020-04-27 09:00:00',1,2);
+INSERT INTO mails(mail_name,user_id,register_user_id,register_date,update_user_id,update_date,version,status) VALUES('gest@rakus-partners.co.jp',5,1,'2020-04-27 09:00:00',1,'2020-04-27 09:00:00',1,2);
 
 
 INSERT INTO conditions(condition_name,register_user_id,register_date,update_user_id,update_date,version,status) VALUES ('快晴',1,'2020-04-27 09:00:00',1,'2020-04-27 09:00:00',1,2);

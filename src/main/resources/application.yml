@@ -6,7 +6,7 @@ spring:
   # DBの設定(デプロイ時に変更)
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/conditions
+    url: jdbc:postgresql://localhost:5432/rakuppo
     username: postgres
     password: postgres
   mail:
