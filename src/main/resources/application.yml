@@ -50,7 +50,7 @@ server:
 # 環境変数(デプロイ時に変更)
 #ローカル環境のOrigin
 environments:
-  originUrl:https://rakuppo-front-demo.web.app/
+  originUrl:https://rakuppo-front-demo.web.app
   
 #デプロイ環境のOrigin 
 #  originUrl: https://condition-meter.firebaseapp.com.firebaseapp.com
